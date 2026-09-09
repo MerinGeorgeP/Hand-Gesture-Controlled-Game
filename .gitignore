@@ -1,0 +1,7 @@
+asl/.venv_312/
+.venv/
+venv/
+__pycache__/
+*.pyc
+runs/
+.DS_Store
