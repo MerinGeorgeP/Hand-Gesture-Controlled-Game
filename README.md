@@ -6,7 +6,6 @@ The project combines **Computer Vision, Machine Learning, Python, UDP networking
 
 ---
 
-## 📌 Project Overview
 
 Traditional games usually rely on keyboards, controllers, or touchscreens for player interaction.
 
