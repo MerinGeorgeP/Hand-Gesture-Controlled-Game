@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bdlqrdufvxx1p"]
+
+[ext_resource type="Script" uid="uid://5hmw0i8vafsi" path="res://scenes/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://dvx588qmv3k0y" path="res://scenes/Brown.png" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://cb6ytcyjb222o" path="res://scenes/JUMPGAME_logo.png" id="2_bqqt6"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ekxnf"]
+
+[node name="MainMenu" type="Node2D" unique_id=379222119]
+script = ExtResource("1_bqqt6")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=138366874]
+texture_filter = 1
+offset_right = 1142.0
+offset_bottom = 655.0
+texture = ExtResource("1_ekxnf")
+stretch_mode = 1
+
+[node name="level1" type="Button" parent="TextureRect2" unique_id=459806897]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35900003
+anchor_top = 0.53000003
+anchor_right = 0.35900003
+anchor_bottom = 0.53000003
+offset_left = -128.97803
+offset_top = -7.1500244
+offset_right = 119.02197
+offset_bottom = 94.849976
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 31
+text = "Level 1"
+icon = SubResource("ViewportTexture_ekxnf")
+
+[node name="level2" type="Button" parent="TextureRect2" unique_id=669339577]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35900003
+anchor_top = 0.53000003
+anchor_right = 0.35900003
+anchor_bottom = 0.53000003
+offset_left = 224.02197
+offset_top = -7.1500244
+offset_right = 472.02197
+offset_bottom = 96.849976
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 31
+text = "Level 2"
+icon = SubResource("ViewportTexture_ekxnf")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=409519858]
+offset_left = 180.0
+offset_top = 118.0
+offset_right = 1005.0
+offset_bottom = 271.0
+texture = ExtResource("2_bqqt6")
+
+[connection signal="pressed" from="TextureRect2/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="TextureRect2/level2" to="." method="_on_level_2_pressed"]
